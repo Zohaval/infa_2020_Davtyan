@@ -6,28 +6,24 @@ pygame.init()
 FPS = 30
 screen = pygame.display.set_mode((600, 800))
 
-# background
+# BACK GROUND
 rect(screen, (128, 102, 0), (0, 400, 800, 800))
 rect(screen, (85, 68, 0), (0, 0, 800, 400))
 
-# window frame
+# WINDOWS FRAME
 rect(screen, (213, 255, 230), (330, 20, 260, 360))
 # top glass
 rect(screen, (135, 205, 222), (345, 30, 108, 100))
 rect(screen, (135, 205, 222), (470, 30, 108, 100))
-# glass below
+# Below Glass
 rect(screen, (135, 205, 222), (345, 150, 108, 210))
 rect(screen, (135, 205, 222), (470, 150, 108, 210))
 
-# cat body
+# BODY
 ellipse(screen, (200, 113, 55), (50, 420, 420, 200))
 ellipse(screen, (78, 45, 21), (49, 419, 422, 202), 1)
 
-# right paw
-ellipse(screen, (200, 113, 55), (36, 500, 48, 88))
-ellipse(screen, (78, 45, 21), (35, 499, 50, 90), 1)
-
-# head
+# HEAD
 ellipse(screen, (200, 113, 55), (15, 430, 145, 145))
 ellipse(screen, (78, 45, 21), (14, 429, 147, 147), 1)
 # right ear
@@ -64,14 +60,17 @@ pygame.draw.arc(screen, (78, 45, 21), (103, 526, 100, 80), 7, (4*pi)/5)
 pygame.draw.arc(screen, (78, 45, 21), (103, 532, 100, 80), 7, (4*pi)/5)
 pygame.draw.arc(screen, (78, 45, 21), (103, 538, 100, 80), 7, (4*pi)/5)
 # left mustache
-pygame.draw.arc(screen, (78, 45, 21), (-27, 526, 100, 80), 7, (4*pi)/5)
-pygame.draw.arc(screen, (78, 45, 21), (-27, 532, 100, 80), 7, (4*pi)/5)
-pygame.draw.arc(screen, (78, 45, 21), (-27, 538, 100, 80), 7, (4*pi)/5)
+arc(screen, (78, 45, 21), (-27, 526, 100, 80), 7, (4*pi)/5)
+arc(screen, (78, 45, 21), (-27, 532, 100, 80), 7, (4*pi)/5)
+arc(screen, (78, 45, 21), (-27, 538, 100, 80), 7, (4*pi)/5)
 
+# PAWS
+# right paw
+ellipse(screen, (200, 113, 55), (36, 500, 48, 88))
+ellipse(screen, (78, 45, 21), (35, 499, 50, 90), 1)
 # left paw
 ellipse(screen, (200, 113, 55), (81, 574, 98, 53))
 ellipse(screen, (78, 45, 21), (80, 574, 100, 55), 1)
-
 # hind paw
 circle(screen, (200, 113, 55), (410, 570), 65)
 circle(screen, (78, 45, 21), (410, 570), 65, 1)
@@ -81,6 +80,12 @@ ellipse(screen, (78, 45, 21), (450, 585, 39, 94), 1)
 # clew
 circle(screen, (153, 153, 153), (350, 730), 60)
 circle(screen, (78, 45, 21), (350, 730), 60, 1)
+# lines on the clew
+
+
+# lines near the clew
+
+
 
 pygame.display.update()
 clock = pygame.time.Clock()
