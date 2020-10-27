@@ -87,7 +87,7 @@ while i <= N:
         ellipse(screen, (78, 45, 21), (x+450//k, y+585//k, 39//k, 94//k), 1)
 
 
-    draw_cat(300, 0 + (150*i), 2)
+    draw_cat(250, 100 + (150*i), 2)
     i += 1
 
 # clew
